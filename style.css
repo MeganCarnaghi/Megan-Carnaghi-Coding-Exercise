@@ -1,0 +1,87 @@
+/* Generic Styling for Page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+
+/* Styling for the header */
+
+.header {
+  background-image: url("assets/hero-banner.jpeg");
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__galeBadge-img {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__omniLogo-img {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 100px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for header search form */
+.header__form {
+  margin: 0 20px;
+}
+
+.header-form__h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.header-form-h1_span {
+  font-weight: 400;
+}
+
+.header__searchType-btn {
+  margin-right: -8px;
+  padding: 7px 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.header-form__search-input {
+  width: 350px;
+  margin: 0;
+  padding: 7px;
+  border-radius: 3px;
+  border: none;
+}
+
+.header-form__search-a {
+  font-size: 10px;
+  margin: 2px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
