@@ -1,7 +1,7 @@
 /* Generic Styling for Page */
 html,
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
@@ -12,6 +12,11 @@ button,
 a {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
+}
+
+p {
+  font-size: 12px;
+  color: #000000;
 }
 
 /* Styling for the header */
@@ -47,6 +52,7 @@ a {
 /* Styling for header search form */
 .header__form {
   margin: 0 20px;
+  position: relative;
 }
 
 .header-form__h1 {
@@ -77,6 +83,16 @@ a {
   border: none;
 }
 
+.header-form__search-btn {
+  background-color: transparent;
+  border: none;
+  color: #595959;
+  position: absolute;
+  bottom: 20px;
+  right: 3px;
+  font-size: 18px;
+}
+
 .header-form__search-a {
   font-size: 10px;
   margin: 2px;
@@ -104,23 +120,95 @@ a {
   margin: 0 7px;
 }
 
-.nav__hLightsAndNotes-div {
+.nav__highLightsAndNotes-div {
   text-align: center;
   margin-left: 7px;
   margin-right: 25px;
 }
 
 .nav__i {
-  color: #000;
+  color: #595959;
   font-size: 16px;
   display: block;
   margin-bottom: -5px;
 }
 
 .nav__a {
-  color: #000;
+  color: #595959;
   margin: 0;
   padding: 0;
   font-size: 9px;
   text-decoration: none;
+}
+
+/* Styling for main content section */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__leftSide-div,
+.main__rightSide-div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 50%;
+}
+
+.main-leftSide__sub-div,
+.main-rightSide__sub-div {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 4px #c9cbcc, -2px -1px 4px #c9cbcc;
+}
+
+.main__book-img {
+  padding: 10px 10px 15px 10px;
+  width: 125px;
+}
+
+.main__info-div {
+  margin-right: 20px;
+}
+
+.main__bookTitle-h5 {
+  color: #d54405;
+  margin: 0;
+}
+
+.main__edition-p {
+  font-size: 10px;
+  font-style: italic;
+  margin: 3px 0;
+}
+
+.main__summary-p {
+  margin: 5px 0;
+}
+
+.main__form {
+  position: relative;
+}
+
+.main-form__search-input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  font-size: 12px;
+}
+
+.main-form__search-btn {
+  background-color: transparent;
+  border: none;
+  color: #595959;
+  font-size: 18px;
+  position: absolute;
+  top: 2%;
+  right: 1%;
 }

@@ -33,7 +33,7 @@
         alt="OMNI logo"
       />
       <!-- Search Form -->
-      <form class="header__form">
+      <form action="" method="GET" class="header__form">
         <h1 class="header-form__h1">
           <span class="header-form-h1_span">Gale</span>&nbsp;Directory Library
         </h1>
@@ -48,7 +48,9 @@
           name="search"
           placeholder="Start your search..."
         />
-        <i class="fas fa-search"></i>
+        <button class="header-form__search-btn">
+          <i class="fas fa-search"></i>
+        </button>
         <a class="header-form__search-a" href="#">Advanced Search</a>
       </form>
     </header>
@@ -69,11 +71,57 @@
           ><i class="nav__i fas fa-link"></i>Get Link</a
         >
       </div>
-      <div class="nav__hLightsAndNotes-div">
+      <div class="nav__highLightsAndNotes-div">
         <a class="nav__a" href="#"
           ><i class="nav__i fas fa-highlighter"></i>Highlights and Notes</a
         >
       </div>
     </nav>
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Left Side Column-->
+      <div class="main__leftSide-div">
+        <!-- Book 1 Div-->
+        <div class="main-leftSide__sub-div">
+          <img
+            class="main__book-img"
+            src="assets/book-1.jpeg"
+            alt="Biography and Genealogy Master Index book cover"
+          />
+          <div class="main__info-div">
+            <h5 class="main__bookTitle-h5">
+              Biography and Genealogy Master Index
+            </h5>
+            <p class="main__edition-p">2020 Edition, 2020</p>
+            <p class="main__summary-p">
+              Biography and Genealogy Master Index (BGMI) provides more than 20
+              million biographical citation on more than 6 millions persons,
+              living and deceased, from all fields of activity, covering more
+              than 2,000...
+            </p>
+            <form class="main__form" action="" method="get">
+              <label for="bio-and-genealogy-master-index"></label>
+              <input
+                class="main-form__search-input"
+                id="bio-and-genealogy-master-index"
+                type="search"
+                name="bio-and-genealogy-master-index"
+                placeholder="Search... Biography and Genealogy Master Index"
+              />
+              <button class="main-form__search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Book 2 Div-->
+        <div class="main-leftSide__sub-div"></div>
+      </div>
+      <!-- Right Side Column-->
+      <div class="main__rightSide-div">
+        <div class="main-rightSide__sub-div"></div>
+        <div class="main-rightSide__sub-div"></div>
+      </div>
+    </main>
   </body>
 </html>
