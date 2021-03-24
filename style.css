@@ -15,7 +15,6 @@ a {
 }
 
 /* Styling for the header */
-
 .header {
   background-image: url("assets/hero-banner.jpeg");
   height: 30%;
@@ -83,5 +82,45 @@ a {
   margin: 2px;
   color: #fff;
   display: block;
+  text-decoration: none;
+}
+
+/* Styling for nav bar */
+.nav {
+  height: 5%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 2px #c9cbcc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.nav__titleList-div,
+.nav__searchHistory-div,
+.nav__getLink-div {
+  text-align: center;
+  margin: 0 7px;
+}
+
+.nav__hLightsAndNotes-div {
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 25px;
+}
+
+.nav__i {
+  color: #000;
+  font-size: 16px;
+  display: block;
+  margin-bottom: -5px;
+}
+
+.nav__a {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
   text-decoration: none;
 }
