@@ -8,6 +8,7 @@ body {
 }
 
 input,
+label,
 button {
   font-family: "Open Sans", sans-serif;
 }
@@ -227,6 +228,10 @@ p {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .container-item-form__input {
   width: 100%;
   padding: 5px;
@@ -247,7 +252,8 @@ p {
 
 /* Styling for Browse Topics Section */
 .topics__section {
-  margin: 0 30px 40px 30px;
+  margin: 5px 30px 40px 30px;
+  width: 450px;
 }
 
 .topics-section__h5 {
@@ -267,7 +273,9 @@ p {
 }
 
 .topics-section__div {
-  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .topics-section__btn {
@@ -276,7 +284,7 @@ p {
   border: 1px solid #006298;
   padding: 3px 8px;
   border-radius: 3px;
-  margin-right: 2px;
+  margin: 0 5px 5px 0;
 }
 
 .topics-section__a:link {
@@ -303,6 +311,10 @@ p {
 
 .footer-logo__img {
   margin: 0 30px;
+}
+
+.footer-tagline__img {
+  margin: 0 10px;
 }
 
 .footer-nav__ul {
@@ -332,6 +344,78 @@ p {
   color: #006298;
 }
 
-.footer-tagline__img {
-  margin: 0 10px;
+/* STYLING FOR MOBILE */
+@media screen and (max-width: 480px) {
+  .header__form {
+    padding-top: 40px;
+  }
+
+  .header-form__h1 {
+    font-size: 20px;
+  }
+
+  .header-form__search-input {
+    width: 250px;
+  }
+
+  .header__galeBadge-img {
+    width: 125px;
+  }
+
+  .header__omniLogo-img {
+    top: 10px;
+    right: 10px;
+    width: 75px;
+  }
+
+  .header-form__search-btn {
+    bottom: 20px;
+  }
+
+  .nav {
+    justify-content: space-around;
+  }
+
+  .nav__div:nth-child(4) {
+    margin-right: 0px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .container-col1__div,
+  .container-col2__div {
+    width: 100%;
+  }
+
+  .container-item-form__input::placeholder {
+    color: transparent;
+  }
+
+  .topics__section {
+    margin: 10px 30px 30px 30px;
+    width: 300px;
+  }
+
+  .footer {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav__ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .footer-logo__img {
+    margin: 0;
+  }
+
+  .footer-tagline__img {
+    margin: 0;
+  }
 }
