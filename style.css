@@ -8,9 +8,12 @@ body {
 }
 
 input,
-button,
-a {
+button {
   font-family: "Open Sans", sans-serif;
+}
+
+a,
+button {
   font-size: 10px;
 }
 
@@ -81,6 +84,7 @@ p {
   padding: 7px;
   border-radius: 3px;
   border: none;
+  font-size: 10px;
 }
 
 .header-form__search-btn {
@@ -94,7 +98,6 @@ p {
 }
 
 .header-form__search-a {
-  font-size: 10px;
   margin: 2px;
   color: #fff;
   display: block;
@@ -112,31 +115,25 @@ p {
   align-items: center;
 }
 
-.nav__titleList-div,
-.nav__searchHistory-div,
-.nav__getLink-div {
+.nav__div {
   text-align: center;
   margin: 0 7px;
 }
 
-.nav__highLightsAndNotes-div {
-  text-align: center;
-  margin-left: 7px;
+.nav__div:nth-child(4) {
   margin-right: 25px;
+}
+
+.nav__div a {
+  text-decoration: none;
+  color: #595959;
 }
 
 .nav__i {
   color: #595959;
   font-size: 16px;
   display: block;
-  margin-bottom: -5px;
-  margin-top: 5px;
-}
-
-.nav__a {
-  color: #595959;
-  font-size: 9px;
-  text-decoration: none;
+  margin: 5px 0 -5px 0;
 }
 
 /* Styling for main content section */
@@ -144,6 +141,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .container-col1__div,
@@ -155,20 +153,20 @@ p {
 
 .container-item__div {
   display: flex;
-  align-items: center;
   background-color: #fff;
-  width: 100%;
   border-radius: 3px;
   box-shadow: 3px 3px 4px #c9cbcc, -2px -1px 4px #c9cbcc;
+  margin: 10px;
+  min-height: 175px;
 }
 
 .container-item__book-img {
-  padding: 10px 10px 15px 10px;
-  width: 125px;
+  margin: 10px 10px 15px 10px;
+  width: 105px;
 }
 
 .container-item__info-div {
-  margin-right: 20px;
+  margin: 10px 20px 10px 0px;
 }
 
 .container-item__h5 {
@@ -192,7 +190,7 @@ p {
 
 .container-item-form__input {
   width: 100%;
-  padding: 7px;
+  padding: 5px;
   border-radius: 3px;
   border: 1px solid #d9d9d9;
   font-size: 12px;
