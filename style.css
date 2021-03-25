@@ -17,12 +17,24 @@ button {
   font-size: 10px;
 }
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 p {
-  font-size: 12px;
   color: #000000;
 }
 
-/* Styling for the header */
+/* Styling for Header */
 .header {
   background-image: url("assets/hero-banner.jpeg");
   height: 30%;
@@ -52,7 +64,7 @@ p {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling for header search form */
+/* Styling for Header Search Form */
 .header__form {
   margin: 0 20px;
   position: relative;
@@ -76,6 +88,8 @@ p {
   padding: 7px 5px;
   border: none;
   border-radius: 3px;
+  background-color: #f2f2f2;
+  color: #595959;
 }
 
 .header-form__search-input {
@@ -97,14 +111,25 @@ p {
   font-size: 18px;
 }
 
-.header-form__search-a {
+.header-form__search-a:link {
   margin: 2px;
   color: #fff;
   display: block;
-  text-decoration: none;
 }
 
-/* Styling for nav bar */
+.header-form__search-a:visited {
+  color: #fff;
+}
+
+.header-form__search-a:hover {
+  color: #fff;
+}
+
+.header-form__search-a:active {
+  color: #fff;
+}
+
+/* Styling for Nav Bar */
 .nav {
   height: 5%;
   width: 100%;
@@ -124,8 +149,19 @@ p {
   margin-right: 25px;
 }
 
-.nav__div a {
-  text-decoration: none;
+.nav__div a:link {
+  color: #595959;
+}
+
+.nav__div a:visited {
+  color: #595959;
+}
+
+.nav__div a:hover {
+  color: #595959;
+}
+
+.nav__div a:active {
   color: #595959;
 }
 
@@ -136,12 +172,12 @@ p {
   margin: 5px 0 -5px 0;
 }
 
-/* Styling for main content section */
+/* Styling for Main Container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 .container-col1__div,
@@ -153,16 +189,17 @@ p {
 
 .container-item__div {
   display: flex;
+  align-items: flex-start;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: 3px 3px 4px #c9cbcc, -2px -1px 4px #c9cbcc;
   margin: 10px;
-  min-height: 175px;
+  min-height: 165px;
 }
 
 .container-item__book-img {
-  margin: 10px 10px 15px 10px;
-  width: 105px;
+  margin: 10px;
+  width: 100px;
 }
 
 .container-item__info-div {
@@ -171,6 +208,7 @@ p {
 
 .container-item__h5 {
   color: #d54405;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -182,6 +220,7 @@ p {
 
 .container-item__summary-p {
   margin: 5px 0;
+  font-size: 12px;
 }
 
 .container-item__form {
@@ -204,4 +243,95 @@ p {
   position: absolute;
   top: 2%;
   right: 1%;
+}
+
+/* Styling for Browse Topics Section */
+.topics__section {
+  margin: 0 30px 40px 30px;
+}
+
+.topics-section__h5 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.topics-section__span {
+  border-bottom: 3px solid #d54405;
+  padding-bottom: 2px;
+}
+
+.topics-section__p {
+  font-size: 10px;
+  padding-top: 4px;
+}
+
+.topics-section__div {
+  margin-bottom: 4px;
+}
+
+.topics-section__btn {
+  background-color: #fff;
+  color: #006298;
+  border: 1px solid #006298;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+
+.topics-section__a:link {
+  color: #006298;
+}
+.topics-section__a:visited {
+  color: #006298;
+}
+.topics-section__a:hover {
+  color: #006298;
+}
+.topics-section__a:active {
+  color: #006298;
+}
+
+/* Styling for Footer */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #fff;
+}
+
+.footer-logo__img {
+  margin: 0 30px;
+}
+
+.footer-nav__ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-nav__li {
+  text-transform: uppercase;
+}
+
+.footer-nav__li a:link {
+  color: #006298;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.footer-nav__li a:visited {
+  color: #006298;
+}
+
+.footer-nav__li a:hover {
+  color: #006298;
+}
+
+.footer-nav__li a:active {
+  color: #006298;
+}
+
+.footer-tagline__img {
+  margin: 0 10px;
 }
