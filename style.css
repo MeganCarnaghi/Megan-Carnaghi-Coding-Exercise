@@ -350,6 +350,21 @@ p {
   color: #006298;
 }
 
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .container-item-form__input::placeholder {
+    font-size: 9px;
+  }
+
+  .container-item__div {
+    min-height: 230px;
+  }
+  .footer-nav__ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 25px;
+  }
+}
+
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .header__form {
     padding-top: 40px;
@@ -390,6 +405,10 @@ p {
   .container {
     flex-direction: column;
     padding: 15px;
+  }
+
+  .container-item-form__input::placeholder {
+    font-size: 11px;
   }
 
   .nav {
