@@ -1,279 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gale - A Cengage Company</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <img
-        class="header__galeBadge-img"
-        src="assets/Gale Badge.svg"
-        alt="Gale badge"
-      />
 
-      <img
-        class="header__omniLogo-img"
-        src="assets/co-branding.png"
-        alt="OMNI logo"
-      />
-      <!-- Header Search Form -->
-      <form action="" method="GET" class="header__form">
-        <h1 class="header-form__h1">
-          <span class="header-form-h1_span">Gale</span>&nbsp;Directory Library
-        </h1>
-        <button type="button" class="header__searchType-btn">
-          Basic&nbsp;&#x25BE;&nbsp;
-        </button>
-        <label for="search"></label>
-        <input
-          class="header-form__search-input"
-          type="search"
-          id="search"
-          name="search"
-          placeholder="Start your search..."
-        />
-        <button type="submit" class="header-form__search-btn">
-          <i class="fas fa-search"></i>
-        </button>
-        <a class="header-form__search-a" href="#">Advanced Search</a>
-      </form>
-    </header>
-    <!-- Nav Bar -->
-    <nav class="nav">
-      <div class="nav__div">
-        <a href="#"><i class="nav__i far fa-list-alt"></i>Title List</a>
-      </div>
-      <div class="nav__div">
-        <a href="#"><i class="nav__i fas fa-history"></i>Search History</a>
-      </div>
-      <div class="nav__div">
-        <a href="#"><i class="nav__i fas fa-link"></i>Get Link</a>
-      </div>
-      <div class="nav__div">
-        <a href="#"
-          ><i class="nav__i fas fa-highlighter"></i>Highlights and Notes</a
-        >
-      </div>
-    </nav>
-    <!-- Main Content -->
-    <main>
-      <div class="container">
-        <!-- Column 1-->
-        <div class="container-col1__div">
-          <!-- Column 1, Book 1 -->
-          <div class="container-item__div">
-            <img
-              class="container-item__book-img"
-              src="assets/book-1.jpeg"
-              alt="Biography and Genealogy Master Index book cover"
-            />
-            <div class="container-item__info-div">
-              <h5 class="container-item__h5">
-                Biography and Genealogy Master Index
-              </h5>
-              <p class="container-item__edition-p">2020 Edition, 2020</p>
-              <p class="container-item__summary-p">
-                Biography and Genealogy Master Index (BGMI) provides more than
-                20 million biographical citation on more than 6 millions
-                persons, living and deceased, from all fields of activity,
-                covering more than 2,000...
-              </p>
-              <form class="container-item__form" action="" method="get">
-                <label
-                  class="container-item-form__label"
-                  for="bio-and-genealogy-master-index"
-                ></label>
-                <input
-                  class="container-item-form__input"
-                  id="bio-and-genealogy-master-index"
-                  type="search"
-                  name="bio-and-genealogy-master-index"
-                  placeholder="Search... Biography and Genealogy Master Index"
-                />
-                <button type="submit" class="container-item-form__search-btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <!-- Column 1, Book 2-->
-          <div class="container-item__div">
-            <img
-              class="container-item__book-img"
-              src="assets/book-3.jpeg"
-              alt="Business Rankings Annual book cover"
-            />
-            <div class="container-item__info-div">
-              <h5 class="container-item__h5">Business Rankings Annual</h5>
-              <p class="container-item__edition-p">2021 Edition, 2021</p>
-              <p class="container-item__summary-p">
-                Provides "top ten" rankings of companies, products, services,
-                and business-related activities compiled from a variety of
-                published sources.
-              </p>
-              <form class="container-item__form" action="" method="get">
-                <label for="business-rankings-annual"></label>
-                <input
-                  class="container-item-form__input"
-                  id="business-rankings-annual"
-                  type="search"
-                  name="business-rankings-annual"
-                  placeholder="Search... Business Rankings Annual"
-                />
-                <button type="submit" class="container-item-form__search-btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gale - A Cengage Company</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img class="header__galeBadge-img" src="assets/Gale Badge.svg" alt="Gale badge" />
+
+    <img class="header__omniLogo-img" src="assets/co-branding.png" alt="OMNI logo" />
+    <!-- Header Search Form -->
+    <form action="" method="GET" class="header__form">
+      <h1 class="header-form__h1"><span class="header-form-h1_span">Gale</span>&nbsp;Directory Library</h1>
+      <button type="button" class="header__searchType-btn">Basic&nbsp;&#x25BE;&nbsp;</button>
+      <label for="search"></label>
+      <input class="header-form__search-input" type="search" id="search" name="search"
+        placeholder="Start your search..." />
+      <button type="submit" class="header-form__search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+      <a class="header-form__search-a" href="#">Advanced Search</a>
+    </form>
+  </header>
+  <!-- Nav Bar -->
+  <nav class="nav">
+    <div class="nav__div">
+      <a href="#"><i class="nav__i far fa-list-alt"></i>Title List</a>
+    </div>
+    <div class="nav__div">
+      <a href="#"><i class="nav__i fas fa-history"></i>Search History</a>
+    </div>
+    <div class="nav__div">
+      <a href="#"><i class="nav__i fas fa-link"></i>Get Link</a>
+    </div>
+    <div class="nav__div">
+      <a href="#"><i class="nav__i fas fa-highlighter"></i>Highlights and Notes</a>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Column 1-->
+      <div class="container-col1__div">
+        <!-- Column 1, Book 1 -->
+        <div class="container-item__div">
+          <img class="container-item__book-img" src="assets/book-1.jpeg"
+            alt="Biography and Genealogy Master Index book cover" />
+          <div class="container-item__info-div">
+            <h5 class="container-item__h5">Biography and Genealogy Master Index</h5>
+            <p class="container-item__edition-p">2020 Edition, 2020</p>
+            <p class="container-item__summary-p">
+              Biography and Genealogy Master Index (BGMI) provides more than 20 million biographical citation on more
+              than 6 millions persons, living and deceased, from all fields of activity, covering more than 2,000...
+            </p>
+            <form class="container-item__form" action="" method="get">
+              <label class="container-item-form__label" for="bio-and-genealogy-master-index"></label>
+              <input class="container-item-form__input" id="bio-and-genealogy-master-index" type="search"
+                name="bio-and-genealogy-master-index" placeholder="Search... Biography and Genealogy Master Index" />
+              <button type="submit" class="container-item-form__search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
-        <!-- Column 2-->
-        <div class="container-col2__div">
-          <!-- Column 2, Book 1 -->
-          <div class="container-item__div">
-            <img
-              class="container-item__book-img"
-              src="assets/book-2.jpeg"
-              alt="Brands and Their Companies book cover"
-            />
-            <div class="container-item__info-div">
-              <h5 class="container-item__h5">Brands and Their Companies</h5>
-              <p class="container-item__edition-p">45th Edition, 2021</p>
-              <p class="container-item__summary-p">
-                Lists manufacturers and distributors from small businesses to
-                large corporations, from both the public and private sectors.
-                Provides complete coverage of U.S. consumer brands;
-                manufacturers, importers and...
-              </p>
-              <form class="container-item__form" action="" method="get">
-                <label for="brands-and-their-companies"></label>
-                <input
-                  class="container-item-form__input"
-                  id="brands-and-their-companies"
-                  type="search"
-                  name="brands-and-their-companies"
-                  placeholder="Search... Brands and Their Companies"
-                />
-                <button type="submit" class="container-item-form__search-btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <!-- Column 2, Book 2 -->
-          <div class="container-item__div">
-            <img
-              class="container-item__book-img"
-              src="assets/book-4.jpeg"
-              alt="Consultants & Consulting Organizations Directory book cover"
-            />
-            <div class="container-item__info-div">
-              <h5 class="container-item__h5">
-                Consultants & Consulting Organizations Directory
-              </h5>
-              <p class="container-item__edition-p">46th Edition, 2021</p>
-              <p class="container-item__summary-p">
-                Provides information on firms and individuals from the U.S. and
-                Canada in the consulting services industry. Covers 14 general
-                fields of consulting activity ranging from agriculture to
-                marketing, and more...
-              </p>
-              <form class="container-item__form" action="" method="get">
-                <label for="brands-and-their-companies"></label>
-                <input
-                  class="container-item-form__input"
-                  id="brands-and-their-companies"
-                  type="search"
-                  name="brands-and-their-companies"
-                  placeholder="Search... Brands and Their Companies"
-                />
-                <button type="submit" class="container-item-form__search-btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
+        <!-- Column 1, Book 2-->
+        <div class="container-item__div">
+          <img class="container-item__book-img" src="assets/book-3.jpeg" alt="Business Rankings Annual book cover" />
+          <div class="container-item__info-div">
+            <h5 class="container-item__h5">Business Rankings Annual</h5>
+            <p class="container-item__edition-p">2021 Edition, 2021</p>
+            <p class="container-item__summary-p">
+              Provides "top ten" rankings of companies, products, services, and business-related activities compiled
+              from a variety of published sources.
+            </p>
+            <form class="container-item__form" action="" method="get">
+              <label for="business-rankings-annual"></label>
+              <input class="container-item-form__input" id="business-rankings-annual" type="search"
+                name="business-rankings-annual" placeholder="Search... Business Rankings Annual" />
+              <button type="submit" class="container-item-form__search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
-      <!-- Browse Topics Section -->
-      <section class="topics__section">
-        <h5 class="topics-section__h5">
-          <span class="topics-section__span">Browse </span>Topics By Discipline
-        </h5>
-        <p class="topics-section__p">
-          Explore over 500 topics broken down by discipline for targeted results
-          on your interests.
-        </p>
-        <div class="topics-section__div">
-          <button type="submit" class="topics-section__btn">Biology</button>
-          <button type="submit" class="topics-section__btn">Chemistry</button>
-          <button type="submit" class="topics-section__btn">
-            Criminal Justice
-          </button>
-          <button type="submit" class="topics-section__btn">Economics</button>
-          <button type="submit" class="topics-section__btn">
-            Environmental Science
-          </button>
-          <button type="submit" class="topics-section__btn">History</button>
-          <button type="submit" class="topics-section__btn">Marketing</button>
-          <button type="submit" class="topics-section__btn">
-            Political Science
-          </button>
-          <button type="submit" class="topics-section__btn">Psychology</button>
-          <a class="topics-section__a" href="#">View All Topics &#187;</a>
+      <!-- Column 2-->
+      <div class="container-col2__div">
+        <!-- Column 2, Book 1 -->
+        <div class="container-item__div">
+          <img class="container-item__book-img" src="assets/book-2.jpeg" alt="Brands and Their Companies book cover" />
+          <div class="container-item__info-div">
+            <h5 class="container-item__h5">Brands and Their Companies</h5>
+            <p class="container-item__edition-p">45th Edition, 2021</p>
+            <p class="container-item__summary-p">
+              Lists manufacturers and distributors from small businesses to large corporations, from both the public
+              and private sectors. Provides complete coverage of U.S. consumer brands; manufacturers, importers and...
+            </p>
+            <form class="container-item__form" action="" method="get">
+              <label for="brands-and-their-companies"></label>
+              <input class="container-item-form__input" id="brands-and-their-companies" type="search"
+                name="brands-and-their-companies" placeholder="Search... Brands and Their Companies" />
+              <button type="submit" class="container-item-form__search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
         </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <img
-        class="footer-logo__img"
-        src="assets/gale-logo.png"
-        alt="Gale logo"
-      />
-      <ul class="footer-nav__ul">
-        <li class="footer-nav__li"><a href="#">About&nbsp;&nbsp;|</a></li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Help&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Dictionary&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Contact Us&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Terms of Use&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li">
-          <a href="#">&nbsp;&nbsp;Accessibility&nbsp;&nbsp;|</a>
-        </li>
-        <li class="footer-nav__li"><a href="#">&nbsp;&nbsp;End Session</a></li>
-      </ul>
-      <img
-        class="footer-tagline__img"
-        src="assets/gale-tagline.png"
-        alt="Gale tagline"
-      />
-    </footer>
-  </body>
+        <!-- Column 2, Book 2 -->
+        <div class="container-item__div">
+          <img class="container-item__book-img" src="assets/book-4.jpeg"
+            alt="Consultants & Consulting Organizations Directory book cover" />
+          <div class="container-item__info-div">
+            <h5 class="container-item__h5">Consultants & Consulting Organizations Directory</h5>
+            <p class="container-item__edition-p">46th Edition, 2021</p>
+            <p class="container-item__summary-p">
+              Provides information on firms and individuals from the U.S. and Canada in the consulting services
+              industry. Covers 14 general fields of consulting activity ranging from agriculture to marketing, and
+              more...
+            </p>
+            <form class="container-item__form" action="" method="get">
+              <label for="brands-and-their-companies"></label>
+              <input class="container-item-form__input" id="brands-and-their-companies" type="search"
+                name="brands-and-their-companies" placeholder="Search... Brands and Their Companies" />
+              <button type="submit" class="container-item-form__search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Browse Topics Section -->
+    <section class="topics__section">
+      <h5 class="topics-section__h5"><span class="topics-section__span">Browse </span>Topics By Discipline</h5>
+      <p class="topics-section__p">
+        Explore over 500 topics broken down by discipline for targeted results on your interests.
+      </p>
+      <div class="topics-section__div">
+        <button type="submit" class="topics-section__btn">Biology</button>
+        <button type="submit" class="topics-section__btn">Chemistry</button>
+        <button type="submit" class="topics-section__btn">Criminal Justice</button>
+        <button type="submit" class="topics-section__btn">Economics</button>
+        <button type="submit" class="topics-section__btn">Environmental Science</button>
+        <button type="submit" class="topics-section__btn">History</button>
+        <button type="submit" class="topics-section__btn">Marketing</button>
+        <button type="submit" class="topics-section__btn">Political Science</button>
+        <button type="submit" class="topics-section__btn">Psychology</button>
+        <a class="topics-section__a" href="#">View All Topics &#187;</a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <img class="footer-logo__img" src="assets/gale-logo.png" alt="Gale logo" />
+    <ul class="footer-nav__ul">
+      <li class="footer-nav__li"><a href="#">About&nbsp;&nbsp;|</a></li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Help&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Dictionary&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Contact Us&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Terms of Use&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li">
+        <a href="#">&nbsp;&nbsp;Accessibility&nbsp;&nbsp;|</a>
+      </li>
+      <li class="footer-nav__li"><a href="#">&nbsp;&nbsp;End Session</a></li>
+    </ul>
+    <img class="footer-tagline__img" src="assets/gale-tagline.png" alt="Gale tagline" />
+  </footer>
+</body>
+
 </html>
