@@ -117,6 +117,7 @@ p {
 }
 
 .header-form__search-a:link {
+  width: 85px;
   margin: 2px;
   color: #fff;
   display: block;
@@ -411,13 +412,6 @@ p {
     font-size: 11px;
   }
 
-  .nav {
-    justify-content: space-evenly;
-  }
-
-  .nav__div:nth-child(4) {
-    margin-right: 0px;
-  }
   .footer {
     padding: 20px 0;
     flex-direction: column;
@@ -468,7 +462,6 @@ p {
 
   .nav {
     justify-content: space-evenly;
-    height: 7%;
   }
 
   .nav__div:nth-child(4) {
@@ -512,5 +505,11 @@ p {
 
   .footer-tagline__img {
     margin: 0;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .nav {
+    height: 7%;
   }
 }
