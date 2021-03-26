@@ -380,6 +380,10 @@ p {
     flex-direction: column;
     padding: 15px;
   }
+
+  .topics__section {
+    margin: 10px 30px 30px 30px;
+  }
   .footer-nav__ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -410,6 +414,11 @@ p {
 
   .container-item-form__input::placeholder {
     font-size: 11px;
+  }
+
+  .topics__section {
+    margin: 10px 30px 30px 30px;
+    width: 90%;
   }
 
   .footer {
